@@ -1,0 +1,8 @@
+#application name
+spring.application.name=Oauth2.xApp
+
+# server port number
+server.port=4041
+spring.security.oauth2.client.registration.google.client-name=enant-id=SpringSecurithOuthSush10
+spring.security.oauth2.client.registration.google.client-id=1056440017056-t82hf3iqgdah5o1a38flsgguu4ce96j0.apps.googleusercontent.com
+spring.security.oauth2.client.registration.google.client-secret=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

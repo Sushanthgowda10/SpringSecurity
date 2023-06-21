@@ -1,0 +1,30 @@
+package com.nt.controller;
+
+import java.security.Principal;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class RedBusUserOperationController {
+
+	@GetMapping("/home")
+	public String ShowHomePage() {
+		return "<h1> welcome to RedBus.com home page </h1>";
+		
+	}
+	@GetMapping("after")
+	public String afterLoginPage() {
+		return "<h1> page after login activity </h1>";
+		
+	}
+	
+	@GetMapping("/user")
+	public Authentication ShowUserdetails(Principal principal)
+	Authentication auth= SecurityContextHolder.getContext().getAuthentication();
+	return auth;
+	
+}
+

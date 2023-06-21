@@ -1,0 +1,15 @@
+package stringNonRepeated;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Main {
+	public static void main(String[] args) {
+		String str = "abbcdeef";
+		char firstNonRepeatingChar = str.chars().mapToObj(c -> (char) c)
+				.collect(LinkedHashMap::new, (map, c) -> map.merge(c, 1, Integer::sum), LinkedHashMap::putAll)
+				.entrySet().stream().filter(entry -> entry.getValue() == 1).map(Map.Entry::getKey).findFirst()
+				.orElse('\0');
+		System.out.println("The first non-repeating character in " + str + " is: " + firstNonRepeatingChar);
+	}
+}

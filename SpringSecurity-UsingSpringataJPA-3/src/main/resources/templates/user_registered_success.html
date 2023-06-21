@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<b>Hello</b>
+	<h1 style="color: green; text-align: center;">
+		<span th:text="${message}"></span>
+	</h1>
+	
+	<br>
+	<b> <a th:href="@{/user/login}">Login</a> </b>
+	<br>
+	<b> <a th:href="@{/user/register}">Add another user</a> </b>
+	<br>
+	<b> <a th:href="@{/bank}">Home</a> </b>
+</body>
+</html>

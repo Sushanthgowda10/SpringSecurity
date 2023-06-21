@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SpringSecurity-LogginToGmail">
+        <property name="context-root" value="SpringSecurity-LogginToGmail"/>
+        <property name="java-output-path" value="/SpringSecurity-LogginToGmail/target/classes"/>
+    </wb-module>
+</project-modules>
